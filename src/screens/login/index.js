@@ -1,12 +1,42 @@
-import {Image, Text, View} from "react-native";
-import logo from "../../assets/Logo.png";
+import {Image, Pressable, Text, TextInput, View} from "react-native";
+import logo from "../../assets/logoShopSwift.png";
 import {styles} from "./style";
 
 export const Login = () =>{
     return (
-        <View>
+        <View style={styles.containerHome}>
             <Image source={logo}/>
+
+            <View style={styles.contentHome}>
+
             <Text style={styles.txtTitulo}>Faça login e se <Text style={styles.txtHighlights}>surpreenda</Text></Text>
+
+            <View style={styles.containerForm}>
+
+                 <View style={styles.containerInputs}>
+                     <View>
+                         <Text>E-mail:</Text>
+                         <TextInput keyboardType='email-address'  style={styles.input} />
+                     </View>
+
+                     <View>
+                         <Text>Senha:</Text>
+                         <TextInput secureTextEntry={true} style={styles.input} />
+                     </View>
+                 </View>
+
+
+                 <Pressable style={styles.buttonLogin}>
+                     <Text style={styles.txtLogin}>Entrar</Text>
+                </Pressable>
+
+            </View>
+
+            <Text style={styles.txtNaotemconta}>Não tem uma conta? <Text style={styles.txtCriarconta}>Criar conta</Text> </Text>
+
+            </View>
+
         </View>
+
     )
 }

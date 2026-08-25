@@ -1,5 +1,5 @@
 import {SafeAreaView} from "react-native-safe-area-context";
-import {Login} from "./screens/login";
+import {Register} from "./screens/cadastro";
 
 
 
@@ -7,7 +7,7 @@ export function App() {
   return (
       <SafeAreaView>
 
-          <Login/>
+          <Register/>
 
       </SafeAreaView>
 
