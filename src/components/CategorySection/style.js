@@ -1,0 +1,25 @@
+import styled from "styled-components/native";
+import {View,Text} from "react-native";
+
+export const ContainerCategory = styled(View)`
+    gap: 10px;
+    
+`
+
+export const TextTitle = styled(Text)`
+    font-size: 20px;
+    font-weight: bold;
+    
+`
+
+export const TextHighlight = styled(Text)`
+    color: #375EE7;
+    
+`
+
+export const Scroll = styled.ScrollView.attrs({
+    contentContainerStyle: {
+        gap: 20
+    }
+})``
+
